@@ -82,29 +82,37 @@ ani.save('solarsystemmovie.mp4', writer = writer)
 '''
 #plot of e and a
 
-fig, ar = plt.subplots(2,4, sharex = True)
+divide_param = 10
+fig, ar = plt.subplots(2,2, sharex = True)
 
 plot1 = ar[0,0] #mercury
 plot2 = ar[0,1] #venus
-plot3 = ar[0,2] #earth
-plot4 = ar[0,3] #mars
-plot5 = ar[1,0] #Jupiter
-plot6 = ar[1,1] #saturn
-plot7 = ar[1,2] #uranus
-plot8 = ar[1,3] #netpune
+plot3 = ar[1,0] #earth
+plot4 = ar[1,1] #mars
 plot1.plot(data[0],data[5], label = "Mercury", color = "brown")
-plot1.set_ylim([min(data[5])-data[5][0]/2,max(data[5])+data[5][0]/2])
+plot1.set_ylim([min(data[5])-data[5][0]/divide_param,max(data[5])+data[5][0]/divide_param])
 plot1.set_xlim([min(data[0]),max(data[0])])
 plot1.legend()
 plot2.plot(data[0],data[12], label = "Venus", color = "yellow")
-plot2.set_ylim([min(data[12])-data[12][0]/2,max(data[12])+data[12][0]/2])
+plot2.set_ylim([min(data[12])-data[12][0]/divide_param,max(data[12])+data[12][0]/divide_param])
 plot2.legend()
 plot3.plot(data[0],data[19], label = "Earth", color = "green")
-plot3.set_ylim([min(data[19])-data[19][0]/2,max(data[19])+data[19][0]/2])
+plot3.set_ylim([min(data[19])-data[19][0]/divide_param,max(data[19])+data[19][0]/divide_param])
 plot3.legend()
 plot4.plot(data[0],data[26], label = "Mars", color = "red")
-plot4.set_ylim([min(data[26])-data[26][0]/2,max(data[26])+data[26][0]/2])
+plot4.set_ylim([min(data[26])-data[26][0]/divide_param,max(data[26])+data[26][0]/divide_param])
 plot4.legend()
+#plt.xlabel("Time (Yr)")
+#plt.ylabel("eccentricity")
+
+#fig.show()
+fig.savefig("eplot_terr.png")
+
+fig2, ar2 = plt.subplots(2,2, sharex = True)
+plot5 = ar2[0,0] #Jupiter
+plot6 = ar2[0,1] #saturn
+plot7 = ar2[1,0] #uranus
+plot8 = ar2[1,1] #netpune
 plot5.plot(data[0],data[33], label = "Jupiter", color = "black")
 plot5.set_ylim([min(data[33])-data[33][0]/2,max(data[33])+data[33][0]/2])
 plot5.legend()
@@ -117,8 +125,6 @@ plot7.legend()
 plot8.plot(data[0],data[54], label = "Neptune", color = "blue")
 plot8.set_ylim([min(data[54])-data[54][0]/2,max(data[54])+data[54][0]/2])
 plot8.legend()
-plt.xlabel("Time (Yr)")
-plt.ylabel("eccentricity")
 
-
-fig.savefig("eccentricityplot.png")
+fig2.savefig("eplot_giant.png")
+#fig2.show()
