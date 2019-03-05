@@ -1,0 +1,49 @@
+
+           Integration parameters
+           ----------------------
+
+   Algorithm: 15th-order RADAU
+
+   Integration start epoch:               0.0000000 days 
+   Integration stop  epoch:         3652500.0000000
+   Output interval:                     365.250
+   Output precision:                 high
+
+   Initial timestep:                0.100 days 
+   Accuracy parameter:              1.0000E-12
+   Central mass:                    5.0000E-01 solar masses
+   J_2:                              0.0000E+00
+   J_4:                              0.0000E+00
+   J_6:                              0.0000E+00
+   Ejection distance:               1.0000E+02 AU
+   Radius of central body:          5.0000E-03 AU
+
+   Includes collisions:                 yes
+   Includes fragmentation:              no 
+   Includes relativity:                 no 
+   Includes user-defined force routine: no 
+
+   Number of Big bodies:        9
+   Number of Small bodies:      0
+
+
+           Integration details
+           -------------------
+
+   Initial energy:           -2.46439E-03 solar masses AU^2 day^-2 
+   Initial angular momentum:  5.70008E-04 solar masses AU^2 day^-1 
+
+ WARNING: No Small bodies are present.
+
+   Integrating massive bodies and particles up to the same epoch.
+
+   Beginning the main integration.
+
+
+   Integration complete.
+
+   Fractional energy change due to integrator:   6.33486E-09
+   Fractional angular momentum change:           2.92893E-09
+
+   Fractional energy change due to collisions/ejections:  0.00000E+00
+   Fractional angular momentum change:                    0.00000E+00
