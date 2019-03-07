@@ -9,7 +9,7 @@
    Output interval:                     365.250
    Output precision:                 high
 
-   Initial timestep:                0.100 days 
+   Initial timestep:                0.060 days 
    Accuracy parameter:              1.0000E-12
    Central mass:                    5.0000E-01 solar masses
    J_2:                              0.0000E+00
@@ -30,8 +30,8 @@
            Integration details
            -------------------
 
-   Initial energy:           -2.46439E-03 solar masses AU^2 day^-2 
-   Initial angular momentum:  5.70008E-04 solar masses AU^2 day^-1 
+   Initial energy:           -2.46597E-03 solar masses AU^2 day^-2 
+   Initial angular momentum:  5.69466E-04 solar masses AU^2 day^-1 
 
  WARNING: No Small bodies are present.
 
@@ -42,8 +42,8 @@
 
    Integration complete.
 
-   Fractional energy change due to integrator:   6.33486E-09
-   Fractional angular momentum change:           2.92893E-09
+   Fractional energy change due to integrator:   7.64678E-09
+   Fractional angular momentum change:           3.53626E-09
 
    Fractional energy change due to collisions/ejections:  0.00000E+00
    Fractional angular momentum change:                    0.00000E+00

@@ -7,7 +7,7 @@
   start time (days) =    0.0000000000000000     
   stop time (days) =    3652500.0000000000     
   output interval (days) =    365.25000000000000     
-  timestep (days) =   0.10000000000000001     
+  timestep (days) =    5.9999999999999998E-002
   accuracy parameter =    9.9999999999999998E-013
 )---------------------------------------------------------------------
 ) Integration options:
